@@ -1,0 +1,12 @@
+CREATE TABLE tickets (
+    id SERIAL PRIMARY KEY,
+    codigo_ticket VARCHAR(20) UNIQUE NOT NULL,
+    nombre_usuario VARCHAR(100) NOT NULL,
+    equipo_hostname VARCHAR(100) NOT NULL,
+    direccion_ip VARCHAR(45),
+    categoria VARCHAR(50) NOT NULL,
+    prioridad VARCHAR(20) DEFAULT 'Media',
+    descripcion TEXT NOT NULL,
+    estado VARCHAR(30) DEFAULT 'Pendiente',
+    fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
