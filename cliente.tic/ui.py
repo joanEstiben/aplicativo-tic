@@ -132,3 +132,4 @@ class AplicativoTICWidget:
                 "Error de Red",
                 "No se pudo conectar con el servidor central de almacenamiento.",
             )
+            #holaaaaaaaaaaaaa
