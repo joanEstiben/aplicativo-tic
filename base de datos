@@ -4,6 +4,7 @@ CREATE TABLE tickets (
     nombre_usuario VARCHAR(100) NOT NULL,
     equipo_hostname VARCHAR(100) NOT NULL,
     direccion_ip VARCHAR(45),
+    salon VARCHAR(50) DEFAULT 'Sin especificar',
     categoria VARCHAR(50) NOT NULL,
     prioridad VARCHAR(20) DEFAULT 'Media',
     descripcion TEXT NOT NULL,
